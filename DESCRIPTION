@@ -1,0 +1,15 @@
+Package: apnnClassifier
+Type: Package
+Title: Clasificador multiclase basado en redes neuronales.
+Version: 1.0.0
+Author: Jesús Escalante <jesusd.escalante@unet.edu.ve>
+Maintainer: Jesús Escalante <jesusd.escalante@unet.edu.ve>, Rossana Timaure <rttg@unet.edu.ve>
+Description: Clasificador empleando redes neuronales probabilisticas.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+  pnn,
+  dplyr,
+  pROC
+RoxygenNote: 6.1.1
