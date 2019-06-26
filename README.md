@@ -9,8 +9,8 @@ R package that classifies using probabilistic neural networks and evaluate the r
 It is responsible for standardizing a set of data.
 
 ### Params
-⋅⋅⋅ **set:** Data set. (Required).
-⋅⋅⋅ **type:** standardization type (Not required. Default value: "punctual". Valid values: "punctual" - "scale").
+* **set:** Data set. (Required).
+* **type:** standardization type (Not required. Default value: "punctual". Valid values: "punctual" - "scale").
 
 ### Return 
 ⋅⋅⋅ standardized set.
@@ -31,10 +31,10 @@ View(testData)
 It is responsible for executing the prediction of the probabilistic neural network.
 
 ### Params
-⋅⋅⋅ **train_set:** Training set. (Required).
-⋅⋅⋅ **test_set:** Testing set. (Required).
-⋅⋅⋅ **category_column:** Category column (Not required. Default value: 1).
-⋅⋅⋅ **sigma:** Optimum value for the activation function of the neural network. (Not required).
+* **train_set:** Training set. (Required).
+* **test_set:** Testing set. (Required).
+* **category_column:** Category column (Not required. Default value: 1).
+* **sigma:** Optimum value for the activation function of the neural network. (Not required).
 
 ### Return 
 ⋅⋅⋅ pnn trained with the classified testing set and network performance statistics.
@@ -56,7 +56,7 @@ View(pnn)
 Responsible of analyze the classification of the probabilistic neural network and generating the corresponding analysis graphs.
 
 ### Params
-⋅⋅⋅ **pnn:** Trained probabilistic neural network.(Required)
+* **pnn:** Trained probabilistic neural network.(Required)
 
 ### Return 
 ⋅⋅⋅ pnn with evaluated input and analysis charts.
