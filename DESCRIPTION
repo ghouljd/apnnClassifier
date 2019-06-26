@@ -5,7 +5,7 @@ Version: 1.0.0
 Author: Jesús Escalante <jesusd.escalante@unet.edu.ve>
 Maintainer: Jesús Escalante <jesusd.escalante@unet.edu.ve>, Rossana Timaure <rttg@unet.edu.ve>
 Description: Clasificador empleando redes neuronales probabilisticas.
-License: GPL-3
+License: AGPLv3
 Encoding: UTF-8
 LazyData: true
 Imports: 
