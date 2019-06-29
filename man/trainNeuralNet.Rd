@@ -24,6 +24,7 @@ Neural network training of the pnn package for classification
 \examples{
 library(apnnClassifier)
 data(trainData, testData)
+testData <- as.matrix(testData)
 # Basic usage.
 pnn <- trainNeuralNet(train_set = trainData, test_set = testData)
 # If you know the approximate optimal value and the sorter column is not in the first position of the set.

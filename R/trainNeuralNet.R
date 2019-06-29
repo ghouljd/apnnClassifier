@@ -10,6 +10,7 @@
 #' @examples
 #' library(apnnClassifier)
 #' data(trainData, testData)
+#' testData <- as.matrix(testData)
 #' # Basic usage.
 #' pnn <- trainNeuralNet(train_set = trainData, test_set = testData)
 #' # If you know the approximate optimal value and the sorter column is not in the first position of the set.
@@ -33,6 +34,8 @@ trainNeuralNet <- function(train_set, test_set, category_column = 1, sigma) {
 
   if(missing(sigma)){
     print("Finding optimized minimum value.")
+    if (!requireNamespace("rgenoud", quietly = TRUE))
+      stop("Package \"rgenoud\" needed for this function to work. Please install it.", call. = FALSE)
     pnn = pnn::smooth(pnn)
   }
   else

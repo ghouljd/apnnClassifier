@@ -7,6 +7,7 @@
 #' @examples
 #' library(apnnClassifier)
 #' data(trainData, testData)
+#' testData <- as.matrix(testData)
 #' pnn <- trainNeuralNet(train_set = trainData, test_set = testData, sigma = 0.5)
 #' pnn <- evaluate(pnn)
 #' View(pnn)
